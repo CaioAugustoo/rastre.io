@@ -11,7 +11,7 @@ export const OrderStatusHeader = styled.header`
     padding: 5px 20px;
   }
 
-  h5 {
+  h3 {
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--text-secondary-color);
@@ -19,7 +19,7 @@ export const OrderStatusHeader = styled.header`
 `;
 
 export const Wrapper = styled.section`
-  margin: 20rem auto 0 auto;
+  margin: 20rem auto 10rem auto;
   max-width: 90rem;
 
   button {
@@ -90,4 +90,10 @@ export const OrderStatusMovementTitle = styled.h5`
 
 export const OrderStatusSubtitle = styled.p`
   font-size: 1.2rem;
+`;
+
+export const OrderNotFound = styled.h4`
+  font-weight: 500;
+  margin: 30px;
+  font-size: 1.6rem;
 `;
