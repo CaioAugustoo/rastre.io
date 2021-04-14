@@ -1,11 +1,20 @@
 import styled from "styled-components";
 
+export const SectionTitle = styled.h2`
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: var(--text-secondary-color);
+`;
+
 export const OrderStatusHeader = styled.header`
   border-bottom: 1px solid #e3e3e6;
   padding: 10px 30px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
+  background: var(--full-white);
 
   @media (max-width: 900px) {
     padding: 5px 20px;
@@ -19,7 +28,7 @@ export const OrderStatusHeader = styled.header`
 `;
 
 export const Wrapper = styled.section`
-  margin: 20rem auto 10rem auto;
+  margin: 15rem auto 10rem auto;
   max-width: 90rem;
 
   button {
@@ -32,10 +41,10 @@ export const OrderStatusWrapper = styled.ul`
   margin: 0 auto;
   width: 100%;
   background: var(--full-white);
-  box-shadow: var(--primary-shadow);
   border-radius: 8px;
   overflow-y: auto;
-  max-height: 50rem;
+  max-height: 45rem;
+  box-shadow: var(--primary-shadow);
 
   &::-webkit-scrollbar {
     width: 8px;
