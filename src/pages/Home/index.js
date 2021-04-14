@@ -40,7 +40,11 @@ const HomePage = () => {
                 style={{ border: error ? "1px solid red" : "" }}
               />
               {!!error && <S.Error>{error}</S.Error>}
-              {!!search && <Button full>Rastrear agora!</Button>}
+              {
+                <Button full disabled={!search}>
+                  Rastrear agora!
+                </Button>
+              }
             </form>
           </S.Box>
         </S.Wrapper>

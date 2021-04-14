@@ -22,6 +22,12 @@ export const Wrapper = styled.button`
       transform: scale(1.02);
     }
 
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+      transform: scale(1);
+    }
+
     ${!!full && WrapperModifiers.full()};
   `}
 `;
