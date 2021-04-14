@@ -21,12 +21,12 @@ export const Box = styled.div`
   padding: 30px;
   background: var(--full-white);
   max-width: 400px;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border-radius: 6px;
 
   &:hover {
-    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.05);
   }
 `;
 

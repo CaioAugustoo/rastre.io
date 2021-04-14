@@ -18,7 +18,13 @@ const Header = ({ code }) => {
             <Logo width="100" />
           </Link>
           {pathname === "/" && !code ? (
-            <Button>Código fonte</Button>
+            <a
+              href="https://github.com/CaioAugustoo/rastre.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button>Código fonte</Button>
+            </a>
           ) : (
             <S.Code>{code}</S.Code>
           )}

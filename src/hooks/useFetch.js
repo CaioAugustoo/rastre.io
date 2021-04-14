@@ -1,15 +1,13 @@
 import { useCallback, useState } from "react";
 
 const useFetch = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
 
   const request = useCallback(async (url, options) => {
     let response;
     let json;
     try {
-      setError("");
       setLoading(true);
       response = await fetch(url, options);
       json = await response.json();
@@ -18,7 +16,7 @@ const useFetch = () => {
       setLoading(false);
       response = null;
       json = null;
-      setError(err.message);
+      console.log(err);
     } finally {
       setData(json);
       setLoading(false);
@@ -30,7 +28,6 @@ const useFetch = () => {
     request,
     data,
     loading,
-    error,
   };
 };
 
