@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/rastreio/:code" element={<OrderPage />} />
+        <Route path="*" element={<HomePage />} />
       </Routes>
       <GlobalStyles />
     </BrowserRouter>

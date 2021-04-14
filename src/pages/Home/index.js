@@ -3,6 +3,7 @@ import * as S from "./styles";
 import Header from "../../components/UI/Header";
 import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";
+import Head from "../../components/Helper/Head";
 
 import { Container } from "../../styles/global";
 import { useState } from "react";
@@ -23,6 +24,7 @@ const HomePage = () => {
 
   return (
     <>
+      <Head title="Início" />
       <Header />
       <Container>
         <S.Wrapper>
